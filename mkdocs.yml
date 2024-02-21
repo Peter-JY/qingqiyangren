@@ -1,0 +1,7 @@
+site_name: 清气养人
+theme:
+  name: material
+  logo: image/icon.jpeg
+  palette:
+    primary: indigo
+  language: zh
