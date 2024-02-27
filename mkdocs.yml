@@ -1,7 +1,23 @@
 site_name: 清气养人
+
 theme:
   name: material
   logo: image/icon.jpeg
+  icon:
+    admonition:
+      question: octicons/question-16
+  features:
+    - navigation.path
   palette:
     primary: indigo
   language: zh
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+plugins:
+  - glightbox
