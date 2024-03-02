@@ -12,6 +12,17 @@ theme:
     primary: indigo
   language: zh
 
+nav:
+  - 首页: index.md
+  - 走进清华: tsinghua.md
+  - 专业介绍: major.md
+  - 学习方法分享:
+    - 语文: 学习方法分享/study.md
+  - 问答墙:
+    - 2022: 问答墙/2022.md
+    - 2023: 问答墙/2023.md
+  - 其他高校宣讲: others.md
+
 markdown_extensions:
   - admonition
   - pymdownx.details
