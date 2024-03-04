@@ -1,4 +1,5 @@
 name: deploy
+
 on:
   push:
     branches:
@@ -6,8 +7,10 @@ on:
   merge_group:
     branches:
       - main
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
