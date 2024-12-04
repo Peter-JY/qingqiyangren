@@ -1,4 +1,4 @@
-name: deploy
+name: Build
 
 on:
   push:
@@ -8,25 +8,16 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.x
-      - name: Package dependencies
-        run: |
-          pip install mkdocs
-          pip install mkdocs-material
-          pip install mkdocs-glightbox
-      - name: Deploy
-        run: mkdocs gh-deploy --force
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Build MkDocs site
+        run: mkdocs build
