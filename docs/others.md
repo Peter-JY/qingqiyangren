@@ -1,5 +1,9 @@
 # 其他高校宣讲
 
+> 寒假宣讲群
+
+* [北京二中返校宣讲微信群二维码分发网站](https://univpublicizer-qrcodeplatform.pages.dev/home?port=2233)
+
 > 来源：“北京二中er”公众号
 
 * [高校专业介绍系列（1）清-北-人](https://mp.weixin.qq.com/s/NSqiUCR7TtezCtO8vFnWPg)
